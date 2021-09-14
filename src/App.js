@@ -48,14 +48,13 @@ function App() {
         <StepWrapper>
           <StepTitle>STEP 3</StepTitle>
           <StepSubtitle>Cache files</StepSubtitle>
+          <Content>1. 利用 service-worker，Cache 住 192x192 的圖片</Content>
         </StepWrapper>
         <StepWrapper>
           <StepTitle>STEP 4</StepTitle>
-          <StepSubtitle>Try push notification</StepSubtitle>
-        </StepWrapper>
-        <StepWrapper>
-          <StepTitle>STEP 5</StepTitle>
           <StepSubtitle>Offer offline experience</StepSubtitle>
+          <Content>1. 當使用者離線時，提供一個 offline page</Content>
+          <Content>2. 當使用者離線時，利用先前留下的 cache，讓使用者繼續瀏覽網頁</Content>
         </StepWrapper>
      </StepsWrapper>
    </Wrapper>
@@ -107,7 +106,7 @@ const Subtitle = styled.div`
 
 const StepsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px 15px;
 
   @media (max-width: 768px) {
@@ -144,6 +143,8 @@ const Content = styled.div`
   color: #000;
   font-size: 17px;
   margin: 5px 0;
+  width: 100%;
+  word-break: break-word;
 `;
 
 const A2HSButtonWrapper = styled.div`

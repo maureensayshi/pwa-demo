@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// service-worker step 1: register the service worker 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     // must under /
