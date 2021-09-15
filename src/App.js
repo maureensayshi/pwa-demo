@@ -28,7 +28,7 @@ function App() {
   return (
    <Wrapper>
      <Title>Welcome to PWA Playground <Icon src="https://img.icons8.com/ios/250/000000/light-on.png" /></Title>
-     <Subtitle>Enjoy PWA in 5 steps</Subtitle>
+     <Subtitle>Enjoy PWA in 4 steps</Subtitle>
      <StepsWrapper>
         <StepWrapper>
           <StepTitle>STEP 1</StepTitle>
